@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,46 +8,67 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Employee Payroll App </title>
-    <script defer src="../js/home.js"></script>
+    <link rel="icon" href="../assets/images/logo.png">
+    <title>Employee Payroll App</title>
+    <script src="../js/home.js"></script>
 </head>
 
 <body>
-    <!--Uc1:  Ability to create an Employee Payroll System Home Page UI - 
-     Note that the Header is exactly same as the Add Employee Payroll form UI. So take it as is.---->
+    <!--UC1:- Ability to create an Employee Payroll System Home Page UI.
+              - Note that the Header is exactly same as the Add Employee Payroll  Form UI. So take it as is. -->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/images/logo.png">
+            <img src="../assets/images/logo.png" alt="">
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-text emp-payroll">PAYROLL</span>
             </div>
         </div>
     </header>
-    <!--UC 2 – Employee Payroll Form with Header and Name-->
+    <!-- UC2: Employee Payroll Form with Header and Name -->
     <div class="main-content">
         <div class="header-content">
             <div class="emp-detail-text">
                 Employee Details <div class="emp-count">10</div>
             </div>
-            <a href="../pages/Employee Payroll App Home Page.html" class="add-button">
-                <img src="../assets/icons/add-24px.svg" alt="">Add User
-            </a>
-            <!----header content-->
-
-            <table id="display" class="table">
-                <!--UC 3 – Display Employee Details in Tabular Format-->
-                
+            <a href="../pages/EmployeePayrollApp.html" class="add-button">
+                <img src="../assets/icons/add-24px.svg" alt="">Add User</a>
+        </div>  <!-- header-content -->
+        <div class="table main">
+            <table id="table-display" class="table">
+                <!-- UC3: Ability to view Employee Payroll details in a Tabular Format. -->
+                <!-- <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                    <th>Start Date</th>
+                    <th>Actions</th>
+                </tr>
+                <tr>
+                    <td><img class="profile" alt=""
+                        src="../assets/profile-images/Ellipse -2.png">
+                    </td>
+                    <td>Narayan Mahadevan</td>
+                    <td>Male</td>
+                    <td><div class="dept-label">HR</div>
+                        <div class="dept-label">Finance</div></td>
+                    <td>300000</td>
+                    <td>1 Nov 2020</td>
+                    <td>
+                        <img id="1" onclick="remove(this)" alt="delete"
+                             src="../assets/icons/delete-black-18dp.svg">
+                        <img id="1" onclick="update(this)" alt="edit"
+                             src="../assets/icons/create-black-18dp.svg">
+                    </td>
+                </tr> -->
             </table>
-        </div>
-    </div>
-
-    <!--Table main-->
-    <!--main content-->
+        </div> <!-- table main-->
+    </div> <!-- main content -->
     <script src="../js/home.js"></script>
     <script src="../js/utility.js"></script>
     <script src="../js/site_properties.js"></script>
-    <script src="../js/PayrollForm.js"></script>
+    <script src="../js/EmployeePayroll.js"></script>
 </body>
-
 </html>

@@ -51,11 +51,11 @@ const createEmployeePayroll = () => {
 
     employeePayrollData.profilePic = getSelectedValues('[name=profile]').pop();
     employeePayrollData.gender = getSelectedValues('[name=gender]').pop();
-    employeePayrollData.department = getSelectedValues('[name=department]');
+    employeePayrollData.department = getSelectedValues('[name=department]').pop();
     employeePayrollData.salary = getInputValueById('#salary');
     employeePayrollData.note = getInputValueById('#notes');
-    //let date = getInputValueById('#day') + " " + getInputValueById('#month') + " " + getInputValueById('#year');
-    employeePayrollData.date = Date.parse(date);
+    let date = getInputValueById('#day') + " " + getInputValueById('#month') + " " + getInputValueById('#year');
+    employeePayrollData.startdate = new Date(Date.parse(date));
     alert(employeePayrollData.toString());
     return employeePayrollData;
 }
